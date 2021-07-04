@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Car Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+      <script type="text/javascript">
+      function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+
+    
+
+
+  </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="startTime()">
+
+  <header>
+        <div id ="logoImg">
+            <img src="images/logo.png" alt="Car Market">
+        </div>
+        <p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+        <div id ="headNav">
+            <nav>
+            <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">loja</a></li>
+          <li><a href="about.html">sobre</a></li>
+          <li><a href="appointment.html">Contato</a></li>
+          <li><a href="loginRegister.html">login/cadastro</a></li>
+          </ul>
+            </nav>
+         </div>
+  
+        <div id ="headImgService">
+          <img src="images/1.png" alt="fusca shop">
+        </div>  
+  </header>
+  
+
+
+
+  
+<main>
+
+
+
+    <br>
+    <h1 style="color:#2E9AFE;"><b>Encontre seu fusca<b></h1>
+    <div id="gridimg">
+
+
+
+
+    <figure>
+    <img src="images/cars/f4.jpg" height="150px" width="250px" />
+    <figcaption1>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Fusca vermeião Turbo 71</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Sobre</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Especificações</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Categoria</td>
+                    <td>Lenda/máquina mortífera</td>
+                    
+                </tr>
+        <tr>
+                    <td>Motor</td>
+                    <td>1600s (dupla carburação) com turbo de 2kilo e mei de compressão</td>
+                    
+                </tr>
+        <tr>
+                    <td>Modelo</td>
+                    <td>Fusca vermeião Turbo 71</td>
+                    
+                </tr>
+        <tr>
+                    <td>Assentos</td>
+                    <td>2, pra você e sua coragem</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Preço</td>
+                    <td>R$56000</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.google.com/search?q=cachorro+chave&client=opera&hs=gRE&sxsrf=ALeKk035w_VSXPQ09ieXQA2GIbx6PoghjA%3A1619559741150&ei=PYWIYObeCKXD5OUPvJKQuAs&oq=cachorro+chave&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgQILhAKMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECCMQJzoECAAQQzoICAAQxwEQowI6BAguEEM6AgguOgUILhCTAjoICAAQxwEQrwFKBQg4EgExUKoKWJkYYKIZaABwAHgAgAGZAYgB-Q2SAQQwLjE0mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwim8cCYsp_wAhWlIbkGHTwJBLcQ4dUDCBA&uact=5'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>Veja mais</strong></button>
+                <button type="button" onclick="alert('Estamos com problemas XD')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>VÍDEOS</strong></button>
+              
+              </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption1>
+  </figure>
+
+  <figure>
+    <img src="images/cars/f2.jpg"height="150px" width="250px"  />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Fusca 1500 78</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Epsilon 0.8 MPi (EU 2/3/4) 5-Speed Manual FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Eon</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>1600$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/eon/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/f5.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Fusca 1978 de drift</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>UII 1.4 CRDi 6 Speed Manual FWD #1</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i20 Coupe</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>1800$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i20-coupe'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/f1.jpg" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Fusca 1300L 77</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Kappa 1.25 MPi 5 Speed Manual FWD #1</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i20</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>18500$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i20'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/cars/f3.png" height="150px" width="250px" />
+    <figcaption>
+     
+    <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">fusca 1500 68</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+  </main>
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+   <div class="footer" >
+    <div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+        
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">compre já  </a></p>
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">sobre nós</a></p>
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contato </a></p>
+      
+    
+      </div>
+
+      <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+        
+          
+          
+          <p style="color:#1E9AFE; font-family: arial; font-size: 15px">bem vindo ao Fusca Shop!!</p>
+          
+          <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : fuscashop@gmail.com</p>
+          
+          <p style="color:#ffffff;font-family: arial; font-size: 13px">Contate nos: 514-292-1514</p>
+      
+      
+    
+      </div>
+     
+     <div id ="icons" >
+      
+        <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+        <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;">
+      
+
+      </div>
+      <div>
+      
+       <p style="color:white; margin-top: 15px;">&copy;  Fusca Shop, vendendo sonhos, não carros.</p>
+       </div>
+    
+    </div>
+        
+  
+      
+    
+    
+</body>
+</html>

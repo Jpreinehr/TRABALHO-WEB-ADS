@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" href="css/styles.css"><!--REFERENCIA AO CSS-->
+	<title>Car Market</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+    	function startTime() {
+  		var today = new Date();
+  		var h = today.getHours();
+  		var m = today.getMinutes();
+  		var s = today.getSeconds();
+  		m = checkTime(m);
+  		s = checkTime(s);
+  		document.getElementById('txt').innerHTML =
+  		h + ":" + m + ":" + s;
+  		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+  		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  		return i;
+		}
+
+
+
+          function validateForm() {
+          
+          if( document.myForm.name.value == "" ) {
+           alert("Name must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.email.value == "" ) {
+           alert("Email must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.phn.value == "" ) {
+           alert("Phone number must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.message.value == "" ) {
+           alert("Message must be filled out");
+          return false;
+           }
+		   
+		   else{
+		    alert("Information submitted Successfully");
+			return true;
+			}
+         }
+     </script>
+</head>
+
+<body onload="startTime()">
+
+	<div id="container">
+
+	
+	<header>
+	<div id ="logoImg">
+	<img src="images/logo.png" alt="Car Market">
+	</div>
+	<p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+	<div id ="headNav">
+	<nav>
+		<ul>
+			   <li><a href="index.html">Home</a></li>
+			    <li><a href="services.html">loja</a></li>
+			    <li><a href="about.html">sobre</a></li>
+			    <li><a href="appointment.html">Contato</a></li>
+			    <li><a href="loginRegister.html">login/cadastro</a></li>
+
+			
+		</ul>
+	</nav>
+	</div>
+	
+	
+	<div id ="headImg">
+	<img src="images/headf.jpg" alt="fuque">
+	</div>	
+	</header>
+	
+	<main style="padding-top: 00px; ">
+
+		
+		<h1 style="color:#1E9AFE"><center>CONTACT</center></h1>
+		<h3 style="color:#1E9AFE"><center>Deixe nos ajudar a você encintrar seu fusca.</center></h3>
+      <div id="frmContact">
+        <form name="myForm" onsubmit="return (validateForm())">
+           <h3 style="color:#1E9AFE" align="center">entre em contato agora!</h3>
+           <p style="color:#1E9AFE" align="center">algúem vai te responder. Algum dia...algum dia</p>
+   
+    <div class="row1">
+      <div class="col1Contact">
+        <label for="email">Email*</label>
+      </div>
+      <div class="col2Contact">
+        <input type="textContact"  name="email" placeholder="Enter your email..">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="col1Contact">
+        <label for="name">Name*</label>
+      </div>
+      <div class="col2">
+        <input type="textContact"  name="name" placeholder="Enter your name..">
+      </div>
+    </div>
+
+	<div class="row1">
+      <div class="col1Contact">
+        <label for="address">Address</label>
+      </div>
+      <div class="col2Contact">
+        <input type="textContact"  name="address" placeholder="Enter your address..">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="col1Contact">
+        <label for="phn">Phone*</label>
+      </div>
+      <div class="col2Contact">
+        <input type="textContact"  name="phn" placeholder="Enter your phone no..">
+      </div>
+    </div>
+
+
+	    
+	
+    <div class="row">
+      <div class="col1Contact">
+      	<br>
+        <label for="message">Message*</label>
+      </div>
+      <div class="col2Contact">
+        <input type="textContactMessage"  placeholder="Write something.." style="height:200px" ;>
+      </div>
+    </div>
+    <div class="row" align="center">
+      <button type="button" onclick="alert('We Got Your Message')" style="border-radius: 6px; background-color:#27AE60;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>ENVIAR</strong></button>
+    </div>
+	 <br><br>
+	 <div class="mapouter">
+	   <div class="gmap_canvas">
+	     <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=470%20Sentinel%20Road&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		   <a href="https://www.crocothemes.net">crocothemes.net</a>
+		</div>
+	 </div>
+		
+  </form>
+</div>
+
+	</main>
+
+ <div id ="time" >
+              <h1 style="color:#1E9AFE"><center>Horários de atendimentos</center></h1>
+		      <table >
+                <tr >
+				     <th>Dias</th>
+                     <th>abre as</th>
+                     <th>fecha as</th>
+				</tr>
+                <tr>
+                    <td>seg</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>Ter</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>qua</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>qui</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>sex</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>sab</td>
+                    <td>9:00am</td>
+                    <td>7:30pm</td>
+                </tr>
+				<tr>
+                    <td>dom</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+			
+           </table>
+		 </div>
+
+		<br><br><br><br><br><br><br><br><br>
+	
+	
+	
+	<div class="footer" >
+		<div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+		  	
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">Shop Now</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">Know About Us</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contact Us</a></p>
+			
+		
+		  </div>
+
+		  <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+		  	
+		  		
+		  		
+		  		<p style="color:#1E9AFE; font-family: arial; font-size: 15px">bem vindo ao Fusca Shop!!</p>
+		  		
+			    <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : fuscashop@gmail.com</p>
+			    
+			    <p style="color:#ffffff;font-family: arial; font-size: 13px">Contate nos: 40028922</p>
+		
+		  </div>
+		 
+		 <div id ="icons" >
+		 	
+		     <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+			 <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;"> 
+
+		  </div>
+		  <div>
+		  
+		   <p style="color:white; margin-top: 15px;">&copy;  Fusca Shop, vendendo sonhos, não carros</p>
+		   </div>
+		
+		</div>
+	
+</body>
+</html>
